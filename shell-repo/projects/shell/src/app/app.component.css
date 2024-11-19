@@ -13,6 +13,10 @@
     padding: var(--size-1)
   }
 
+  main {
+    padding-left: var(--size-2);
+  }
+
   aside {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,18 @@
+<h1>Versions in use</h1>
+<p>Here are the versions of the libraries in use: <label><input type="checkbox" [checked]="showDifferentOnly()" (change)="showDifferentOnly.set(!showDifferentOnly())"> show only rows with different versions</label></p>
+<table>
+  <tr>
+    <th>PackageName</th>
+    @for (host of mfeArray(); track $index) {
+      <th>{{host}}</th>
+    }
+  </tr>
+  @for (lib of versionsArray(); track $index) {
+    <tr>
+      <td>{{lib[0]}}</td>
+      @for (host of mfeArray(); track $index) {
+        <td>{{ lib[1][host] }}</td>
+      }
+    </tr>
+  }
+</table>

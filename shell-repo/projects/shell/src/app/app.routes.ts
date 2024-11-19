@@ -10,6 +10,11 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'versions',
+    loadComponent: () =>
+      import('./versions/versions.component').then((m) => m.VersionsComponent),
+  },
+  {
     path: 'demo',
     loadComponent: () =>
       loadRemoteModule('mfe1', './Component').then((m) => m.AppComponent),
