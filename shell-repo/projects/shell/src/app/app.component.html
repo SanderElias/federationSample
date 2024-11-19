@@ -1,0 +1,12 @@
+<header><h2>Shell</h2></header>
+<aside>
+  <ul>
+    <li><a [routerLink]="['home']">Home</a></li>
+    <li><a [routerLink]="['demo']">mfe-1</a></li>
+  </ul>
+  <button (click)="ls.login('sander')">login</button>
+  <button (click)="ls.logout()">logout</button>
+</aside>
+<main>
+  <router-outlet></router-outlet>
+</main>

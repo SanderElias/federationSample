@@ -1,0 +1,21 @@
+:host {
+  display:grid;
+  grid-template-columns: 10rem 1fr;
+  grid-template-rows: 3rem 1fr;
+
+  & > header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: var(--size-1)
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-1);
+  }
+}
