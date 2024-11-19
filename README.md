@@ -3,7 +3,7 @@
 I created this repo to look into versioning issues I had with [native federation](https://www.npmjs.com/package/@angular-architects/native-federation)
 it is mimicking a multi-repo setup.
 
-## shell-reop
+## shell-repo
 
 this is the root workspace, the [shell](./shell-repo/projects/shell/) is the main entry point for the application.
 Also in here lives the [first remote](./shell-repo/projects/mfe1/), which is remote that is loaded by the shell.
